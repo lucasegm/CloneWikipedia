@@ -1,0 +1,77 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul { list-style: none; padding-left: 5px; }
+a { color:blue; text-decoration: none;}
+.bar {
+    background-color: #f9f9fb;
+    padding:15px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+}
+.content {
+    max-width: 1800px;
+    margin: auto;
+    grid-gap: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.content p{
+    text-align: justify;
+}
+.footer {
+    min-height: 100px;
+    border-top: solid 1px #cdcdcd;
+    margin: auto 10px;
+}
+.anchors {
+    border-left: solid 1px #cdcdcd;
+    padding-left: 15px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+.sidebar {
+    border-right: solid 1px #cdcdcd;
+}
+.sidebar a:hover{
+    background-color: black;
+    color: white;
+    transition-duration: 1s;
+    border-radius: 3px;
+}
+.sidebar a{
+    color: black;
+}
+
+.main {
+    display: block;
+    text-align: center;
+}
+button{
+    background-color: black;
+    color: white;
+}
+.logo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+table th {
+    background-color: black;
+    color: white;
+}
+table tbody tr:hover td {
+    background-color: 	grey;
+    color: white;
+    cursor: pointer;
+}
+table {
+    border: solid 1px grey;
+}
